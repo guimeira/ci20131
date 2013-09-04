@@ -58,6 +58,9 @@ public class OrGate extends LogicGate {
 		return val;
 	}
 	
+	/**
+	 * LogicGate interface implementation.
+	 */
 	@Override
 	protected boolean generateOutput(boolean[] input) {
 		double[] doubleInput = new double[input.length];

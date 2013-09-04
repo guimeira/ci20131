@@ -26,6 +26,9 @@ public class NotGate extends LogicGate {
 				-1);
 	}
 	
+	/**
+	 * LogicGate interface implementation.
+	 */
 	@Override
 	protected boolean generateOutput(boolean[] input) {
 		double process = perceptron.process(new double[]{input[0] == true ? 1 : 0});

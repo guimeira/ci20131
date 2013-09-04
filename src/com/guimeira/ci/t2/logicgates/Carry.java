@@ -9,6 +9,9 @@ public class Carry extends TruthTableImplementer {
 	public LogicGate[] andLayer;
 	public LogicGate[] orLayer;
 	
+	/**
+	 * Constructor.
+	 */
 	public Carry() {
 		super(new boolean[][] {
 				{false, false, false},

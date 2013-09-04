@@ -9,6 +9,9 @@ public class Adder extends TruthTableImplementer {
 	public LogicGate[] andLayer;
 	public LogicGate[] orLayer;
 	
+	/**
+	 * Constructor.
+	 */
 	public Adder() {
 		super(new boolean[][] {
 				{false, false, false},

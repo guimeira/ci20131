@@ -57,6 +57,9 @@ public class TruthTableImplementer extends LogicGate {
 		}
 	}
 	
+	/**
+	 * LogicGate interface implementation.
+	 */
 	@Override
 	protected boolean generateOutput(boolean[] in) {
 		for(int i = 0; i < in.length; i++) {

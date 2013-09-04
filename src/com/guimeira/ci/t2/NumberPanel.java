@@ -9,11 +9,22 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
+/**
+ * A panel to input binary numbers.
+ * @author Gui Meira
+ *
+ */
 public class NumberPanel extends JPanel implements ActionListener {
 	private JToggleButton[] buttons;
 	private int numBits;
 	private ActionListener changeListener;
 	
+	/**
+	 * Constructor.
+	 * @param title				title to be shown in the border
+	 * @param numBits			number of bits in the number
+	 * @param changeListener	listener to notify when the number changes
+	 */
 	public NumberPanel(String title, int numBits, ActionListener changeListener) {
 		this.numBits = numBits;
 		this.changeListener = changeListener;
@@ -30,6 +41,10 @@ public class NumberPanel extends JPanel implements ActionListener {
 		setBorder(BorderFactory.createTitledBorder(title));
 	}
 	
+	/**
+	 * Get the current number.
+	 * @return		the current number in a boolean array
+	 */
 	public boolean[] getNumber() {
 		boolean[] number = new boolean[numBits];
 		
@@ -40,6 +55,9 @@ public class NumberPanel extends JPanel implements ActionListener {
 		return number;
 	}
 
+	/**
+	 * Button press handler.
+	 */
 	@Override
 	public void actionPerformed(ActionEvent ev) {
 		JToggleButton source = (JToggleButton) ev.getSource();

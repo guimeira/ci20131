@@ -4,7 +4,7 @@ Controle Inteligente 2013/1
 English
 ---------
 
-This is the source code of a simple project developed for the Inteligent Control subject at Federal University of Espirito Santo.
+This is the source code of a simple project developed for the Intelligent Control subject at Federal University of Espirito Santo.
 
 It's a pretty simple project using single-layer perceptrons to implement logic circuits.
 In this project, I've built an 8-bit adder.
